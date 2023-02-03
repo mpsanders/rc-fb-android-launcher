@@ -1,0 +1,116 @@
+ window.location = "intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end" 
+ window.location = "intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end" 
+ 
+ org.odk.collect.android
+ org.odk.collect.android.provider
+ org.odk.collect.android.provider.odk
+ org.odk.collect.android.provider.odk.forms
+ 
+<a href="intent://#Intent;package=org.odk.collect;action=vnd.android.cursor.dir/vnd.odk.form;end">ODK 1</a>
+
+content://org.odk.collect.android.provider.odk.forms 
+
+intent://#Intent;package=org.odk.collect;action=android.intent.action.VIEW;end
+
+intent://#Intent;package=org.odk.collect;action=vnd.android.cursor.dir/vnd.odk.form;end
+
+intent://vnd.android.cursor.dir/vnd.odk.form/#Intent;package=org.odk.collect;action=android.intent.action.VIEW;end
+
+content://org.odk.collect.android.provider.odk.forms
+
+intent:
+	//#Intent;
+		package=com.app.example;
+		action=android.intent.action.VIEW;
+		category=android.intent.category.BROWSABLE;
+		component=com.app.example/.IntentFilterActivity;
+		scheme=https;
+		S.com.app.example.extra.SECTION_DATA=123;
+		S.data=MY_DATA;end
+
+-----
+### Works!!
+
+<a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end">Launch</a>
+window.location="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end"
+-----
+
+
+
+// Test 1
+intent://#Intent;package=vnd.android.cursor.dir/vnd.odk.form;action=android.intent.action.VIEW;end;
+
+// Test 2
+intent://www.example.com/#Intent;scheme=https;package=com.example.intenturltest;end;
+		
+// Test 3
+intent://stackoverflow.com/questions/29250152/what-is-the-intent-to-launch-any-website-link-in-google-chrome#Intent;scheme=http;package=com.android.chrome;end;
+
+// Test 4
+org.odk.collect.android
+
+intent:  
+   HOST/URI-path // Optional host  
+   #Intent;  
+      package=org.odk.collect.android;
+      action=android.intent.action.VIEW;
+      category=android.intent.category.BROWSABLE;
+      component=\[string\];  
+      scheme=\[string\];  
+   end; 
+
+vnd.android.cursor.dir/vnd.odk.form
+
+vnd.android.cursor.dir/vnd.odk.instance
+
+org.odk.collect.entities
+
+intent:
+	//www.example.com/#Intent;
+		scheme=https;
+		package=com.example.intenturltest;
+		end;
+
+intent://
+	#Intent;
+		package=com.app.example;
+		action=android.intent.action.VIEW;
+		category=android.intent.category.BROWSABLE;
+		component=com.app.example/.IntentFilterActivity;
+		scheme=https;
+		S.com.app.example.extra.SECTION_DATA=123;
+		S.data=MY_DATA;end
+
+
+intent:
+	//stackoverflow.com/questions/29250152/what-is-the-intent-to-launch-any-website-link-in-google-chrome
+	#Intent;
+		scheme=http;
+		package=com.android.chrome;
+	end;
+
+
+------------------------------ 
+ intent:  
+   HOST/URI-path // Optional host  
+   #Intent;  
+      package=\[string\];  
+      action=\[string\];  
+      category=\[string\];  
+      component=\[string\];  
+      scheme=\[string\];  
+   end; 
+ ------------------------------ 
+ intent://scan/#Intent;
+scheme=zxing;
+package=com.google.zxing.client.android;
+S.browser_fallback_url=http%3A%2F%2Fzxing.org;end 
+ ------------------------------ 
+
+
+
+
+
+
+
+<a href="intent://invoice/#Intent;scheme=company;package=company.printapp;S.doctype=FRA;S.docno=FRA1234;S.browser_fallback_url=http%3A%2F%2Fgoogle.com;end">PRINT INVOICE</a>
